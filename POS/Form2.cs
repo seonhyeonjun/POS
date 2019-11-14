@@ -58,7 +58,10 @@ namespace POS
                 textBox1.Text = AH.Text;
 
             }
+            else
+            { 
 
+            }
 
         }
 

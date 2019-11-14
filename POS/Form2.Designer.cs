@@ -33,7 +33,6 @@
             this.CF = new System.Windows.Forms.Button();
             this.NH = new System.Windows.Forms.Button();
             this.SC = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -121,16 +120,6 @@
             this.SC.Text = "4,500\r\n";
             this.SC.UseVisualStyleBackColor = true;
             this.SC.Click += new System.EventHandler(this.SCCC);
-            // 
-            // button17
-            // 
-            this.button17.Font = new System.Drawing.Font("굴림", 20F);
-            this.button17.Location = new System.Drawing.Point(612, 510);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(182, 87);
-            this.button17.TabIndex = 19;
-            this.button17.Text = "카드";
-            this.button17.UseVisualStyleBackColor = true;
             // 
             // button18
             // 
@@ -515,7 +504,6 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
-            this.Controls.Add(this.button17);
             this.Controls.Add(this.CMP);
             this.Controls.Add(this.RT);
             this.Controls.Add(this.PT);
@@ -544,7 +532,6 @@
         private System.Windows.Forms.Button CF;
         private System.Windows.Forms.Button NH;
         private System.Windows.Forms.Button SC;
-        private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.TextBox textBox2;
