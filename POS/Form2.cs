@@ -25,7 +25,7 @@ namespace POS
         {
             InitializeComponent();
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)//총합
         {
             int num_operand = System.Convert.ToInt16(operand);// 변환
 
@@ -35,7 +35,7 @@ namespace POS
             textBox1.Text = result2;
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void textBox3_TextChanged(object sender, EventArgs e)//거스름돈
         {
             textBox2.Text = sum0;
             textBox1.Text = money;
@@ -48,7 +48,7 @@ namespace POS
             textBox3.Text = clear2;
         }
 
-        private void AHH(object sender, EventArgs e)
+        private void AHH(object sender, EventArgs e)//아메리카노 H
         {
             listBox1.Items.Add(label1.Text);
             listBox1.Items.Add(AH.Text);
@@ -67,7 +67,7 @@ namespace POS
 
 
 
-        private void CH(object sender, EventArgs e)
+        private void CH(object sender, EventArgs e)//카페라떼H
         {
             listBox1.Items.Add(CFF.Text);
             listBox1.Items.Add(CF.Text);
@@ -80,92 +80,92 @@ namespace POS
 
         }
 
-        private void AC(object sender, EventArgs e)
+        private void AC(object sender, EventArgs e)//아메리카노 C
         {
             listBox1.Items.Add(ACC.Text);
             listBox1.Items.Add(ACCC.Text);
 
         }
 
-        private void CC(object sender, EventArgs e)
+        private void CC(object sender, EventArgs e)//카페라떼C
         {
             listBox1.Items.Add(CCC.Text);
             listBox1.Items.Add(CCCC.Text);
         }
 
-        private void NHHH(object sender, EventArgs e)
+        private void NHHH(object sender, EventArgs e)//녹차라떼H
         {
             listBox1.Items.Add(NHH.Text);
             listBox1.Items.Add(NH.Text);
         }
 
-        private void NCCC(object sender, EventArgs e)
+        private void NCCC(object sender, EventArgs e)//녹차라데 C
         {
             listBox1.Items.Add(NCC.Text);
             listBox1.Items.Add(NC.Text);
         }
 
-        private void SHHH(object sender, EventArgs e)
+        private void SHHH(object sender, EventArgs e)//고구마라떼H
         {
             listBox1.Items.Add(SHH.Text);
             listBox1.Items.Add(SH.Text);
         }
 
-        private void SCCC(object sender, EventArgs e)
+        private void SCCC(object sender, EventArgs e)//고구마라떼C
         {
             listBox1.Items.Add(SCC.Text);
             listBox1.Items.Add(SC.Text);
         }
 
-        private void NPPP(object sender, EventArgs e)
+        private void NPPP(object sender, EventArgs e)//녹차프라치노
         {
             listBox1.Items.Add(NPP.Text);
             listBox1.Items.Add(NP.Text);
         }
 
-        private void CPPP(object sender, EventArgs e)
+        private void CPPP(object sender, EventArgs e)//초코프라치노
         {
             listBox1.Items.Add(CPP.Text);
             listBox1.Items.Add(CP.Text);
         }
 
-        private void YPPP(object sender, EventArgs e)
+        private void YPPP(object sender, EventArgs e)//요거트 프라치노
         {
             listBox1.Items.Add(YPP.Text);
             listBox1.Items.Add(YP.Text);
         }
 
-        private void MCPPP(object sender, EventArgs e)
+        private void MCPPP(object sender, EventArgs e)//민트초코 프라치노
         {
             listBox1.Items.Add(MCPP.Text);
             listBox1.Items.Add(MCP.Text);
         }
 
-        private void ATTT(object sender, EventArgs e)
+        private void ATTT(object sender, EventArgs e)//얼그레이
         {
             listBox1.Items.Add(ATT.Text);
             listBox1.Items.Add(AT.Text);
         }
 
-        private void PTTT(object sender, EventArgs e)
+        private void PTTT(object sender, EventArgs e)//페퍼민트
         {
             listBox1.Items.Add(PTT.Text);
             listBox1.Items.Add(PT.Text);
         }
 
-        private void RTTT(object sender, EventArgs e)
+        private void RTTT(object sender, EventArgs e)//레몬
         {
             listBox1.Items.Add(RTT.Text);
             listBox1.Items.Add(RT.Text);
         }
 
-        private void CMPPP(object sender, EventArgs e)
+        private void CMPPP(object sender, EventArgs e)//케모바일
         {
             listBox1.Items.Add(CMPP.Text);
             listBox1.Items.Add(CMP.Text);
         }
 
-        private void button19_Click(object sender, EventArgs e)
+        private void button19_Click(object sender, EventArgs e)// 닫기
         {
             Close();
         }
