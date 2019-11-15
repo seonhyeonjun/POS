@@ -80,7 +80,7 @@ namespace POS
 
         }
 
-        private void AC(object sender, EventArgs e)//아메리카노 C
+        private void AC(object sender, EventArgs e)//아메리카노C
         {
             listBox1.Items.Add(ACC.Text);
             listBox1.Items.Add(ACCC.Text);
