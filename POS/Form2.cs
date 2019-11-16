@@ -12,55 +12,68 @@ namespace POS
 {
     public partial class Form2 : Form
     {
-        string operand; // 피연산자1 저장
 
-        string operand2; // 피연산자2 저장
+        string operand = "0"; // 피연산자1 저장
+        string operand2 = "0"; // 피연산자2 저장
         string sum0;
         string money;
-        bool operand_check = false;
+        bool operand_check = true;
         int result;
         int clear;
-
         public Form2()
         {
             InitializeComponent();
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)//총합
         {
-            int num_operand = System.Convert.ToInt16(operand);// 변환
 
-            int num_operand2 = System.Convert.ToInt16(operand2);
+            int num_operand = System.Convert.ToInt32(operand);// 변환
+            int num_operand2 = System.Convert.ToInt32(operand2);//변환
             result = num_operand + num_operand2;
             string result2 = System.Convert.ToString(result);//변환
             textBox1.Text = result2;
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)//거스름돈
+        private void button1_Click(object sender, EventArgs e)//확인
         {
-            textBox2.Text = sum0;
-            textBox1.Text = money;
-            int sum = System.Convert.ToInt16(sum0);
-            sum = 0;
-            int M = System.Convert.ToInt16(money);
-            M = 0;
-            clear = sum - M;
-            string clear2 = System.Convert.ToString(clear);//변환
-            textBox3.Text = clear2;
+            if (textBox2.Text != "")
+            {
+                sum0 = textBox2.Text;
+                money = textBox1.Text;
+                int sum = System.Convert.ToInt32(sum0);
+                int M = System.Convert.ToInt32(money);
+                clear = sum - M;
+                string clear2 = System.Convert.ToString(clear);//변환
+                textBox3.Text = clear2;
+            }
+            else
+            {
+                MessageBox.Show("받은 금액을 입력해주세요");
+            }
         }
+        private void button18_Click(object sender, EventArgs e)// 현금
+        {
 
+            listBox1.Items.Clear();
+            textBox1.Clear();
+
+
+
+        }
         private void AHH(object sender, EventArgs e)//아메리카노H
         {
             listBox1.Items.Add(label1.Text);
             listBox1.Items.Add(AH.Text);
-            if (operand_check == false)
+            if (operand_check == true)
             {
-                operand += "3500";
+                operand = "3500";
                 textBox1.Text = AH.Text;
 
             }
             else
-            { 
-
+            {
+                operand = "0";
+                textBox1.Text = AH.Text;
             }
 
         }
@@ -71,11 +84,16 @@ namespace POS
         {
             listBox1.Items.Add(CFF.Text);
             listBox1.Items.Add(CF.Text);
-            if (operand_check == false)
+            if (operand_check == true)
             {
                 operand2 += "4500";
                 textBox1.Text = AH.Text;
 
+            }
+            else
+            {
+                operand2 += "0";
+                textBox1.Text = AH.Text;
             }
 
         }

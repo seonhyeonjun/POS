@@ -66,12 +66,16 @@
             this.ACCC = new System.Windows.Forms.Button();
             this.CCC = new System.Windows.Forms.Label();
             this.CCCC = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("굴림", 25F);
-            this.textBox1.Location = new System.Drawing.Point(84, 438);
+            this.textBox1.Location = new System.Drawing.Point(101, 439);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(389, 46);
             this.textBox1.TabIndex = 2;
@@ -80,7 +84,7 @@
             // AH
             // 
             this.AH.Font = new System.Drawing.Font("굴림", 12F);
-            this.AH.Location = new System.Drawing.Point(516, 73);
+            this.AH.Location = new System.Drawing.Point(533, 74);
             this.AH.Name = "AH";
             this.AH.Size = new System.Drawing.Size(131, 67);
             this.AH.TabIndex = 3;
@@ -91,7 +95,7 @@
             // CF
             // 
             this.CF.Font = new System.Drawing.Font("굴림", 12F);
-            this.CF.Location = new System.Drawing.Point(864, 73);
+            this.CF.Location = new System.Drawing.Point(881, 74);
             this.CF.Name = "CF";
             this.CF.Size = new System.Drawing.Size(131, 67);
             this.CF.TabIndex = 5;
@@ -102,7 +106,7 @@
             // NH
             // 
             this.NH.Font = new System.Drawing.Font("굴림", 12F);
-            this.NH.Location = new System.Drawing.Point(516, 189);
+            this.NH.Location = new System.Drawing.Point(533, 190);
             this.NH.Name = "NH";
             this.NH.Size = new System.Drawing.Size(131, 59);
             this.NH.TabIndex = 7;
@@ -113,7 +117,7 @@
             // SC
             // 
             this.SC.Font = new System.Drawing.Font("굴림", 12F);
-            this.SC.Location = new System.Drawing.Point(1040, 189);
+            this.SC.Location = new System.Drawing.Point(1057, 190);
             this.SC.Name = "SC";
             this.SC.Size = new System.Drawing.Size(131, 59);
             this.SC.TabIndex = 10;
@@ -124,12 +128,13 @@
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("굴림", 20F);
-            this.button18.Location = new System.Drawing.Point(391, 510);
+            this.button18.Location = new System.Drawing.Point(529, 515);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(182, 87);
             this.button18.TabIndex = 20;
             this.button18.Text = "현금";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -145,7 +150,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("굴림", 20F);
-            this.textBox2.Location = new System.Drawing.Point(84, 515);
+            this.textBox2.Location = new System.Drawing.Point(101, 515);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(291, 38);
             this.textBox2.TabIndex = 22;
@@ -153,17 +158,16 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("굴림", 20F);
-            this.textBox3.Location = new System.Drawing.Point(84, 559);
+            this.textBox3.Location = new System.Drawing.Point(101, 559);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(291, 38);
             this.textBox3.TabIndex = 23;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(84, 50);
+            this.listBox1.Location = new System.Drawing.Point(101, 51);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(389, 364);
             this.listBox1.TabIndex = 24;
@@ -172,7 +176,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 15F);
-            this.label1.Location = new System.Drawing.Point(525, 50);
+            this.label1.Location = new System.Drawing.Point(542, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 20);
             this.label1.TabIndex = 25;
@@ -182,7 +186,7 @@
             // NC
             // 
             this.NC.Font = new System.Drawing.Font("굴림", 12F);
-            this.NC.Location = new System.Drawing.Point(692, 189);
+            this.NC.Location = new System.Drawing.Point(709, 190);
             this.NC.Name = "NC";
             this.NC.Size = new System.Drawing.Size(131, 59);
             this.NC.TabIndex = 8;
@@ -193,7 +197,7 @@
             // SH
             // 
             this.SH.Font = new System.Drawing.Font("굴림", 12F);
-            this.SH.Location = new System.Drawing.Point(864, 189);
+            this.SH.Location = new System.Drawing.Point(881, 190);
             this.SH.Name = "SH";
             this.SH.Size = new System.Drawing.Size(131, 59);
             this.SH.TabIndex = 9;
@@ -204,7 +208,7 @@
             // MCP
             // 
             this.MCP.Font = new System.Drawing.Font("굴림", 12F);
-            this.MCP.Location = new System.Drawing.Point(1040, 306);
+            this.MCP.Location = new System.Drawing.Point(1057, 307);
             this.MCP.Name = "MCP";
             this.MCP.Size = new System.Drawing.Size(131, 59);
             this.MCP.TabIndex = 14;
@@ -215,7 +219,7 @@
             // YP
             // 
             this.YP.Font = new System.Drawing.Font("굴림", 12F);
-            this.YP.Location = new System.Drawing.Point(864, 306);
+            this.YP.Location = new System.Drawing.Point(881, 307);
             this.YP.Name = "YP";
             this.YP.Size = new System.Drawing.Size(131, 59);
             this.YP.TabIndex = 13;
@@ -226,7 +230,7 @@
             // CP
             // 
             this.CP.Font = new System.Drawing.Font("굴림", 12F);
-            this.CP.Location = new System.Drawing.Point(692, 306);
+            this.CP.Location = new System.Drawing.Point(709, 307);
             this.CP.Name = "CP";
             this.CP.Size = new System.Drawing.Size(131, 59);
             this.CP.TabIndex = 12;
@@ -237,7 +241,7 @@
             // NP
             // 
             this.NP.Font = new System.Drawing.Font("굴림", 12F);
-            this.NP.Location = new System.Drawing.Point(516, 306);
+            this.NP.Location = new System.Drawing.Point(533, 307);
             this.NP.Name = "NP";
             this.NP.Size = new System.Drawing.Size(131, 59);
             this.NP.TabIndex = 11;
@@ -248,7 +252,7 @@
             // AT
             // 
             this.AT.Font = new System.Drawing.Font("굴림", 12F);
-            this.AT.Location = new System.Drawing.Point(516, 425);
+            this.AT.Location = new System.Drawing.Point(533, 426);
             this.AT.Name = "AT";
             this.AT.Size = new System.Drawing.Size(131, 59);
             this.AT.TabIndex = 15;
@@ -259,7 +263,7 @@
             // PT
             // 
             this.PT.Font = new System.Drawing.Font("굴림", 12F);
-            this.PT.Location = new System.Drawing.Point(692, 425);
+            this.PT.Location = new System.Drawing.Point(709, 426);
             this.PT.Name = "PT";
             this.PT.Size = new System.Drawing.Size(131, 59);
             this.PT.TabIndex = 16;
@@ -270,7 +274,7 @@
             // RT
             // 
             this.RT.Font = new System.Drawing.Font("굴림", 12F);
-            this.RT.Location = new System.Drawing.Point(864, 425);
+            this.RT.Location = new System.Drawing.Point(881, 426);
             this.RT.Name = "RT";
             this.RT.Size = new System.Drawing.Size(131, 59);
             this.RT.TabIndex = 17;
@@ -281,7 +285,7 @@
             // CMP
             // 
             this.CMP.Font = new System.Drawing.Font("굴림", 12F);
-            this.CMP.Location = new System.Drawing.Point(1040, 425);
+            this.CMP.Location = new System.Drawing.Point(1057, 426);
             this.CMP.Name = "CMP";
             this.CMP.Size = new System.Drawing.Size(131, 59);
             this.CMP.TabIndex = 18;
@@ -293,7 +297,7 @@
             // 
             this.CFF.AutoSize = true;
             this.CFF.Font = new System.Drawing.Font("굴림", 15F);
-            this.CFF.Location = new System.Drawing.Point(873, 50);
+            this.CFF.Location = new System.Drawing.Point(890, 51);
             this.CFF.Name = "CFF";
             this.CFF.Size = new System.Drawing.Size(108, 20);
             this.CFF.TabIndex = 27;
@@ -304,7 +308,7 @@
             // 
             this.NHH.AutoSize = true;
             this.NHH.Font = new System.Drawing.Font("굴림", 15F);
-            this.NHH.Location = new System.Drawing.Point(525, 166);
+            this.NHH.Location = new System.Drawing.Point(542, 167);
             this.NHH.Name = "NHH";
             this.NHH.Size = new System.Drawing.Size(108, 20);
             this.NHH.TabIndex = 28;
@@ -315,7 +319,7 @@
             // 
             this.NCC.AutoSize = true;
             this.NCC.Font = new System.Drawing.Font("굴림", 15F);
-            this.NCC.Location = new System.Drawing.Point(700, 170);
+            this.NCC.Location = new System.Drawing.Point(717, 171);
             this.NCC.Name = "NCC";
             this.NCC.Size = new System.Drawing.Size(109, 20);
             this.NCC.TabIndex = 29;
@@ -326,7 +330,7 @@
             // 
             this.NPP.AutoSize = true;
             this.NPP.Font = new System.Drawing.Font("굴림", 15F);
-            this.NPP.Location = new System.Drawing.Point(525, 283);
+            this.NPP.Location = new System.Drawing.Point(542, 284);
             this.NPP.Name = "NPP";
             this.NPP.Size = new System.Drawing.Size(129, 20);
             this.NPP.TabIndex = 30;
@@ -337,7 +341,7 @@
             // 
             this.CPP.AutoSize = true;
             this.CPP.Font = new System.Drawing.Font("굴림", 15F);
-            this.CPP.Location = new System.Drawing.Point(700, 283);
+            this.CPP.Location = new System.Drawing.Point(717, 284);
             this.CPP.Name = "CPP";
             this.CPP.Size = new System.Drawing.Size(129, 20);
             this.CPP.TabIndex = 31;
@@ -348,7 +352,7 @@
             // 
             this.YPP.AutoSize = true;
             this.YPP.Font = new System.Drawing.Font("굴림", 15F);
-            this.YPP.Location = new System.Drawing.Point(873, 283);
+            this.YPP.Location = new System.Drawing.Point(890, 284);
             this.YPP.Name = "YPP";
             this.YPP.Size = new System.Drawing.Size(149, 20);
             this.YPP.TabIndex = 32;
@@ -359,7 +363,7 @@
             // 
             this.MCPP.AutoSize = true;
             this.MCPP.Font = new System.Drawing.Font("굴림", 15F);
-            this.MCPP.Location = new System.Drawing.Point(1051, 283);
+            this.MCPP.Location = new System.Drawing.Point(1068, 284);
             this.MCPP.Name = "MCPP";
             this.MCPP.Size = new System.Drawing.Size(169, 20);
             this.MCPP.TabIndex = 33;
@@ -370,7 +374,7 @@
             // 
             this.ATT.AutoSize = true;
             this.ATT.Font = new System.Drawing.Font("굴림", 15F);
-            this.ATT.Location = new System.Drawing.Point(525, 402);
+            this.ATT.Location = new System.Drawing.Point(542, 403);
             this.ATT.Name = "ATT";
             this.ATT.Size = new System.Drawing.Size(89, 20);
             this.ATT.TabIndex = 34;
@@ -381,7 +385,7 @@
             // 
             this.PTT.AutoSize = true;
             this.PTT.Font = new System.Drawing.Font("굴림", 15F);
-            this.PTT.Location = new System.Drawing.Point(700, 402);
+            this.PTT.Location = new System.Drawing.Point(717, 403);
             this.PTT.Name = "PTT";
             this.PTT.Size = new System.Drawing.Size(89, 20);
             this.PTT.TabIndex = 35;
@@ -392,7 +396,7 @@
             // 
             this.RTT.AutoSize = true;
             this.RTT.Font = new System.Drawing.Font("굴림", 15F);
-            this.RTT.Location = new System.Drawing.Point(873, 402);
+            this.RTT.Location = new System.Drawing.Point(890, 403);
             this.RTT.Name = "RTT";
             this.RTT.Size = new System.Drawing.Size(49, 20);
             this.RTT.TabIndex = 36;
@@ -403,7 +407,7 @@
             // 
             this.CMPP.AutoSize = true;
             this.CMPP.Font = new System.Drawing.Font("굴림", 15F);
-            this.CMPP.Location = new System.Drawing.Point(1051, 402);
+            this.CMPP.Location = new System.Drawing.Point(1068, 403);
             this.CMPP.Name = "CMPP";
             this.CMPP.Size = new System.Drawing.Size(89, 20);
             this.CMPP.TabIndex = 37;
@@ -414,7 +418,7 @@
             // 
             this.SHH.AutoSize = true;
             this.SHH.Font = new System.Drawing.Font("굴림", 15F);
-            this.SHH.Location = new System.Drawing.Point(873, 170);
+            this.SHH.Location = new System.Drawing.Point(890, 171);
             this.SHH.Name = "SHH";
             this.SHH.Size = new System.Drawing.Size(128, 20);
             this.SHH.TabIndex = 39;
@@ -425,7 +429,7 @@
             // 
             this.SCC.AutoSize = true;
             this.SCC.Font = new System.Drawing.Font("굴림", 15F);
-            this.SCC.Location = new System.Drawing.Point(1051, 166);
+            this.SCC.Location = new System.Drawing.Point(1068, 167);
             this.SCC.Name = "SCC";
             this.SCC.Size = new System.Drawing.Size(129, 20);
             this.SCC.TabIndex = 40;
@@ -436,7 +440,7 @@
             // 
             this.ACC.AutoSize = true;
             this.ACC.Font = new System.Drawing.Font("굴림", 15F);
-            this.ACC.Location = new System.Drawing.Point(700, 50);
+            this.ACC.Location = new System.Drawing.Point(717, 51);
             this.ACC.Name = "ACC";
             this.ACC.Size = new System.Drawing.Size(129, 20);
             this.ACC.TabIndex = 42;
@@ -446,7 +450,7 @@
             // ACCC
             // 
             this.ACCC.Font = new System.Drawing.Font("굴림", 12F);
-            this.ACCC.Location = new System.Drawing.Point(692, 73);
+            this.ACCC.Location = new System.Drawing.Point(709, 74);
             this.ACCC.Name = "ACCC";
             this.ACCC.Size = new System.Drawing.Size(131, 67);
             this.ACCC.TabIndex = 41;
@@ -458,7 +462,7 @@
             // 
             this.CCC.AutoSize = true;
             this.CCC.Font = new System.Drawing.Font("굴림", 15F);
-            this.CCC.Location = new System.Drawing.Point(1051, 50);
+            this.CCC.Location = new System.Drawing.Point(1068, 51);
             this.CCC.Name = "CCC";
             this.CCC.Size = new System.Drawing.Size(109, 20);
             this.CCC.TabIndex = 44;
@@ -468,7 +472,7 @@
             // CCCC
             // 
             this.CCCC.Font = new System.Drawing.Font("굴림", 12F);
-            this.CCCC.Location = new System.Drawing.Point(1040, 73);
+            this.CCCC.Location = new System.Drawing.Point(1057, 74);
             this.CCCC.Name = "CCCC";
             this.CCCC.Size = new System.Drawing.Size(131, 67);
             this.CCCC.TabIndex = 43;
@@ -476,11 +480,55 @@
             this.CCCC.UseVisualStyleBackColor = true;
             this.CCCC.Click += new System.EventHandler(this.CC);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(398, 515);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 38);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "확인";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(6, 525);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 20);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "받은금액";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(6, 568);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 20);
+            this.label3.TabIndex = 47;
+            this.label3.Text = "거스름돈";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(44, 453);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "합계";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1285, 642);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.CCC);
             this.Controls.Add(this.CCCC);
             this.Controls.Add(this.ACC);
@@ -565,5 +613,9 @@
         private System.Windows.Forms.Button ACCC;
         private System.Windows.Forms.Label CCC;
         private System.Windows.Forms.Button CCCC;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
