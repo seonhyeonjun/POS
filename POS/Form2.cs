@@ -17,23 +17,21 @@ namespace POS
         string operand2 = "0"; // 피연산자2 저장
         string sum0;
         string money;
-        bool operand_check = true;
+        bool meun_check = true;
         int result;
         int clear;
         public Form2()
         {
             InitializeComponent();
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)//총합
+        public void total()
         {
-
             int num_operand = System.Convert.ToInt32(operand);// 변환
             int num_operand2 = System.Convert.ToInt32(operand2);//변환
             result = num_operand + num_operand2;
             string result2 = System.Convert.ToString(result);//변환
             textBox1.Text = result2;
         }
-
         private void button1_Click(object sender, EventArgs e)//확인
         {
             if (textBox2.Text != "")
@@ -56,7 +54,12 @@ namespace POS
 
             listBox1.Items.Clear();
             textBox1.Clear();
-
+            textBox2.Clear();
+            textBox3.Clear();
+            MessageBox.Show("결제 완료");
+            operand = "";
+            operand2 = "";
+           
 
 
         }
@@ -64,16 +67,19 @@ namespace POS
         {
             listBox1.Items.Add(label1.Text);
             listBox1.Items.Add(AH.Text);
-            if (operand_check == true)
+            if (meun_check == true)
             {
                 operand = "3500";
                 textBox1.Text = AH.Text;
+                //meun_check = false;
+                total();
 
             }
             else
             {
                 operand = "0";
                 textBox1.Text = AH.Text;
+                total();
             }
 
         }
@@ -84,16 +90,18 @@ namespace POS
         {
             listBox1.Items.Add(CFF.Text);
             listBox1.Items.Add(CF.Text);
-            if (operand_check == true)
+            if (meun_check == true)
             {
                 operand2 += "4500";
                 textBox1.Text = AH.Text;
+                total();
 
             }
             else
             {
                 operand2 += "0";
                 textBox1.Text = AH.Text;
+                total();
             }
 
         }
