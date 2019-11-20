@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.start = new System.Windows.Forms.Button();
-            this.money = new System.Windows.Forms.Button();
             this.close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(47, 59);
+            this.start.Location = new System.Drawing.Point(193, 112);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(210, 62);
             this.start.TabIndex = 0;
@@ -43,19 +42,9 @@
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
-            // money
-            // 
-            this.money.Location = new System.Drawing.Point(47, 166);
-            this.money.Name = "money";
-            this.money.Size = new System.Drawing.Size(210, 62);
-            this.money.TabIndex = 1;
-            this.money.Text = "시재 입력";
-            this.money.UseVisualStyleBackColor = true;
-            this.money.Click += new System.EventHandler(this.money_Click);
-            // 
             // close
             // 
-            this.close.Location = new System.Drawing.Point(47, 283);
+            this.close.Location = new System.Drawing.Point(193, 226);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(210, 62);
             this.close.TabIndex = 2;
@@ -67,9 +56,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 440);
+            this.ClientSize = new System.Drawing.Size(619, 404);
             this.Controls.Add(this.close);
-            this.Controls.Add(this.money);
             this.Controls.Add(this.start);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -80,7 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button start;
-        private System.Windows.Forms.Button money;
         private System.Windows.Forms.Button close;
     }
 }
